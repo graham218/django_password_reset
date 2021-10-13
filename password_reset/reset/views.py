@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from app.models import Employee, Blog
-from app.forms import BlogForm
+from reset.models import Employee, Blog
+from reset.forms import BlogForm
 from django.views.decorators.csrf import csrf_exempt
 from django.template.loader import render_to_string
 from django.http import HttpResponse
