@@ -15,6 +15,9 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+STATIC_DIR = Path(BASE_DIR / 'static')
+TEMPLATE_DIR = Path(BASE_DIR / 'templates')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -124,3 +127,15 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LOGIN_REDIRECT_URL = 'app:home'
+LOGOUT_REDIRECT_URL = 'app:index'
+LOGIN_URL = "login"
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "grahambill022@gmail.com"
+EMAIL_HOST_PASSWORD = '86747486b'
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "grahambill022@gmail.com"
